@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<!-- Meta tags Obrigatórias -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Material Design Bootstrap -->
+	<link href="css/mdb.min.css" rel="stylesheet">
+
+	<title>Perfil Cliente</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="#">GrandCarry</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Cadastro de Vans <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="perfil.html">Perfil </a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<legend><center><h2><b>Clientes Cadastrados</b></h2></center></legend><br>
+		<div class="col-lg-12">
+			<div class="col-lg-10 mx-auto">
+				<form class="form-horizontal center">
+					<div class="row">
+						<div class="form-group col-1">
+							<img class="img-responsive" src="../img/profile.jpg" alt="Icon_Profile" width="100" height="100">
+						</div>
+						<div class="form-group col-3">
+							<label for="nomeDono">Nome:</label>
+							<input type="text" class="form-control" id="nomeDono" value="Cliente 1" readonly>
+						</div>
+						<div class="form-group col-2">
+							<label for="Telefone">Telefone:</label>
+							<input type="text" class="form-control" id="Telefone" value="(XX) XXXX-XXXX" readonly>
+						</div>
+						<div class="form-group col-2 ">
+							<label for="Telefone"></label>
+							<button  type="button" class="btn btn-primary form-control" data-toggle="modal" data-target="#clientModal">Mais Informações</button>
+						</div>
+						<div class="modal fade" id="clientModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Informações:</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<div class="form-group col-12">
+											<form class="form-inline">
+												<div class="form-group">
+													<label for="pwod">Nome:</label>
+													<input type="text" class="form-control" id="nomeDono" value="Cliente" readonly>
+												</div>
+												<div class="form-group">
+													<label for="pwd">Local de Partida:</label>
+													<input type="text" class="form-control" id="nomeDono" value="Endereço " readonly>
+												</div><div class="form-group">
+													<label for="pwd">Local de Destino:</label>
+													<input type="text" class="form-control" id="nomeDono" value="(Diurno)Endereço " readonly>
+													<input type="text" class="form-control" id="nomeDono" value="(Notunro)Endereço " readonly>
+												</div>
+												<div class="form-group">
+													<label for="pwd">Turno:</label>
+													<input type="text" class="form-control" id="nomeDono" value="Diurno\Noturno" readonly>
+												</div>
+												<div class="form-group">
+													<label for="pwd">Status do pagamento:</label>
+													<input type="text" class="form-control" id="nomeDono" value="Em dia" readonly>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="form-group col-1">
+							<img class="img-responsive" src="../img/profile.jpg" alt="Icon_Profile" width="100" height="100">
+						</div>
+						<div class="form-group col-3">
+							<label for="nomeDono">Nome:</label>
+							<input type="text" class="form-control" id="nomeDono" value="Cliente 2" readonly>
+						</div>
+						<div class="form-group col-2">
+							<label for="Telefone">Telefone:</label>
+							<input type="text" class="form-control" id="Telefone" value="(XX) XXXX-XXXX" readonly>
+						</div>
+						<div class="form-group col-2 ">
+							<label for="Telefone"></label>
+							<button  type="button" class="btn btn-primary form-control" data-toggle="modal" data-target="#clientModal">Mais Informações</button>
+						</div>
+						<div class="modal fade" id="clientModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Informações:</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<div class="form-group col-12">
+											<form class="form-inline">
+												<div class="form-group">
+													<label for="pwod">Nome:</label>
+													<input type="text" class="form-control" id="nomeDono" value="Cliente" readonly>
+												</div>
+												<div class="form-group">
+													<label for="pwd">Local de Partida:</label>
+													<input type="text" class="form-control" id="nomeDono" value="Endereço " readonly>
+												</div><div class="form-group">
+													<label for="pwd">Local de Destino:</label>
+													<input type="text" class="form-control" id="nomeDono" value="(Diurno)Endereço " readonly>
+													<input type="text" class="form-control" id="nomeDono" value="(Notunro)Endereço " readonly>
+												</div>
+												<div class="form-group">
+													<label for="pwd">Turno:</label>
+													<input type="text" class="form-control" id="nomeDono" value="Diurno\Noturno" readonly>
+												</div>
+												<div class="form-group">
+													<label for="pwd">Status do pagamento:</label>
+													<input type="text" class="form-control" id="nomeDono" value="Em dia" readonly>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="form-group col-1">
+							<img class="img-responsive" src="../img/profile.jpg" alt="Icon_Profile" width="100" height="100">
+						</div>
+						<div class="form-group col-3">
+							<label for="nomeDono">Nome:</label>
+							<input type="text" class="form-control" id="nomeDono" value="Cliente 3" readonly>
+						</div>
+						<div class="form-group col-2">
+							<label for="Telefone">Telefone:</label>
+							<input type="text" class="form-control" id="Telefone" value="(XX) XXXX-XXXX" readonly>
+						</div>
+						<div class="form-group col-2 ">
+							<label for="Telefone"></label>
+							<button  type="button" class="btn btn-primary form-control" data-toggle="modal" data-target="#clientModal">Mais Informações</button>
+						</div>
+						<div class="modal fade" id="clientModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Informações:</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<div class="form-group col-12">
+											<form class="form-inline">
+												<div class="form-group">
+													<label for="pwod">Nome:</label>
+													<input type="text" class="form-control" id="nomeDono" value="Cliente" readonly>
+												</div>
+												<div class="form-group">
+													<label for="pwd">Local de Partida:</label>
+													<input type="text" class="form-control" id="nomeDono" value="Endereço " readonly>
+												</div><div class="form-group">
+													<label for="pwd">Local de Destino:</label>
+													<input type="text" class="form-control" id="nomeDono" value="(Diurno)Endereço " readonly>
+													<input type="text" class="form-control" id="nomeDono" value="(Notunro)Endereço " readonly>
+												</div>
+												<div class="form-group">
+													<label for="pwd">Turno:</label>
+													<input type="text" class="form-control" id="nomeDono" value="Diurno\Noturno" readonly>
+												</div>
+												<div class="form-group">
+													<label for="pwd">Status do pagamento:</label>
+													<input type="text" class="form-control" id="nomeDono" value="Em dia" readonly>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="form-group col-1">
+							<img class="img-responsive" src="../img/profile.jpg" alt="Icon_Profile" width="100" height="100">
+						</div>
+						<div class="form-group col-3">
+							<label for="nomeDono">Nome:</label>
+							<input type="text" class="form-control" id="nomeDono" value="Cliente 4" readonly>
+						</div>
+						<div class="form-group col-2">
+							<label for="Telefone">Telefone:</label>
+							<input type="text" class="form-control" id="Telefone" value="(XX) XXXX-XXXX" readonly>
+						</div>
+						<div class="form-group col-2 ">
+							<label for="Telefone"></label>
+							<button  type="button" class="btn btn-primary form-control" data-toggle="modal" data-target="#clientModal">Mais Informações</button>
+						</div>
+						<div class="modal fade" id="clientModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Informações:</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<div class="form-group col-12">
+											<form class="form-inline">
+												<div class="form-group">
+													<label for="pwod">Nome:</label>
+													<input type="text" class="form-control" id="nomeDono" value="Cliente" readonly>
+												</div>
+												<div class="form-group">
+													<label for="pwd">Local de Partida:</label>
+													<input type="text" class="form-control" id="nomeDono" value="Endereço " readonly>
+												</div><div class="form-group">
+													<label for="pwd">Local de Destino:</label>
+													<input type="text" class="form-control" id="nomeDono" value="(Diurno)Endereço " readonly>
+													<input type="text" class="form-control" id="nomeDono" value="(Notunro)Endereço " readonly>
+												</div>
+												<div class="form-group">
+													<label for="pwd">Turno:</label>
+													<input type="text" class="form-control" id="nomeDono" value="Diurno\Noturno" readonly>
+												</div>
+												<div class="form-group">
+													<label for="pwd">Status do pagamento:</label>
+													<input type="text" class="form-control" id="nomeDono" value="Em dia" readonly>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer class="text-center">
+		<div class="footer-below">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						Copyright &copy; GrandCarry 2018
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- JavaScript (Opcional) -->
+	<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
