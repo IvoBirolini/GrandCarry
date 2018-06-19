@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="pt-br">
 <head>
+	<?php
+	include("../php/session.php")
+	?>
 	<!-- Meta tags Obrigatórias -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,68 +21,47 @@
 	<title>Cadastro de Vans</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">GrandCarry</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<ul class="navbar-nav">
-				<li class="nav-item active">
-					<a class="nav-link" href="gestaoclientes.html">Gestão de Clientes</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="cadastrovans.html">Cadastro de Vans</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="perfilmotorista.html">Perfil</a>
-				</li>
-			</ul>
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">
-					<a href="landing.html" class="nav-link">Sair</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+	<?php
+		include("../php/navbar.php")
+	?>
 	<div class="container-fluid">
 		<legend><center><h2><b>Cadastro de Van</b></h2></center></legend><br>
 		<div class="col-lg-12">
 			<div class="col-lg-10">
-				<form class="form-horizontal center">
+				<form class="form-horizontal center" method="POST" action="../php/cadastrarVeiculo.php">
 					<div class="form-group col-4">
 						<label for="nomeDono">Dono da Van</label>
-						<input type="text" class="form-control" id="nomeDono" value="<?php echo"$username[nome]"?>" readonly>
+						<input type="text" class="form-control" id="nomeDono" name="nomeDono" value="<?php echo"$username[nome]"?>" readonly>
 					</div>
 					<div class="form-group col-4">
 						<label for="nomeMotorista">Motorista</label>
-						<input type="text" class="form-control" id="nomeMotorista" placeholder="Nome do Motorista do Veículo">
+						<input type="text" class="form-control" id="nomeMotorista" name="nomeMotorista" placeholder="Nome do Motorista do Veículo">
 					</div>
 					<div class="form-group col-4">
 						<label for="telMotorista">Telefone</label>
-						<input type="text" class="form-control" id="telMotorista" placeholder="Telefone do Motorista do Veículo">
+						<input type="text" class="form-control" id="telMotorista" name="telMotorista" placeholder="Telefone do Motorista do Veículo">
 					</div>
 					<div class="form-group col-4">
 						<label for="staticEmail">Email</label>
-						<input type="email" class="form-control" id="staticEmail" placeholder="ex: joao.paulo@gmail.com">
+						<input type="email" class="form-control" id="emailMotorista" name="emailMotorista" placeholder="ex: joao.paulo@gmail.com">
 					</div>
 					<div class="form-group col-4">
 						<label for="placaModelo">Placa do Veículo</label>
-						<input type="text" class="form-control" id="placaModelo" placeholder="ex: HAL-9000">
+						<input type="text" class="form-control" id="placaVeiculo" name="placaVeiculo" placeholder="ex: HAL-9000">
 					</div>
 					<hr>
 					<div class="form-group col-4">
-						<label for="adicionarRota">Rota</label>
-						<input type="text" class="form-control" id="adicionarRota" placeholder="Digite o nome de um bairro da rota.">
-						<button type="button" class="btn btn-info">Adicionar à Rota</button>
+						<h5>Rota</h5>
+						<label for="bairroSaida">Partida</label>
+						<input type="text" class="form-control" id="bairroPartida" name="bairroPartida" placeholder="Digite o nome do bairro de partida">
 					</div>
-
-					<div class="col-4">
-						<textarea class="form-control" id="listaRota" rows="5" readonly=""></textarea>
+					<div class="form-group col-4">
+						<label for="bairroSaida">Destino</label>
+						<input type="text" class="form-control" id="bairroDestino" name="bairroDestino" placeholder="Digite o nome do bairro de destino">
 					</div>
 					<hr>
 					<div class="col-2">
-						<button type="button" class="btn btn-success">Cadastrar Van</button>
+						<button type="submit" value="submit" id="submit" name="submit" class="btn btn-success">Cadastrar Van</button>
 					</div>
 				</form>
 			</div>
