@@ -4,7 +4,7 @@
 	{
 		unset($_SESSION['loginEmail']);
 		unset($_SESSION['loginPassword']);
-		header('location:index.php');
+		header('location:../pages/landing.php');
 	}
 
 	$logado = $_SESSION['loginEmail'];

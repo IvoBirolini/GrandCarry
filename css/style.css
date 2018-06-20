@@ -35,3 +35,7 @@ footer .footer-below {
 .avatar{
 	width: 200px;
 }
+.pesquisar .col-sm-3{
+	padding-bottom: 15px;
+	padding-top: 15px;
+}

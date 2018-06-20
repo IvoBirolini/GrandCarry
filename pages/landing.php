@@ -12,8 +12,6 @@
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!-- Material Design Bootstrap -->
-	<link href="css/mdb.min.css" rel="stylesheet">
 
 	<title>GrandCarry - Te levando mais longe</title>
 </head>
@@ -101,7 +99,7 @@
 				<div class="modal-body">
 					<form method="POST" action="../php/login.php">
 						<div class="form-group">
-							<label for="loginEmail">E-Mail</label>
+							<label for="loginEmail">E-mail</label>
 							<input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="nome@exemplo.com.br"/>
 						</div>
 						<div class="form-group">
@@ -145,7 +143,7 @@
 						</div>
 						<div class="form-group">
 							<label for="registerPhone">Telefone</label>
-							<input type="text" class="form-control bfh-phone" data-format="(ddd) ddddd-dddd" name="registerPhone" id="registerPhone" placeholder="(XX) XXXXX-XXXX">
+							<input type="text" class="form-control bfh-phone" data-format="(ddd) ddddd-dddd" name="registerPhone" id="registerPhone" placeholder="XX XXXXX-XXXX">
 						</div>
 						<div class="form-group">
 							<div class="row">
@@ -154,7 +152,7 @@
 									<div class="form-check">
 										<input class="form-check-input" type="radio" name="registerProfile" id="registerProfile" value="motorista" checked/>
 										<label class="form-check-label" for="registerProfile"/>
-										Motorista
+										Motorista/Dono de Veículo
 									</label>
 								</div>
 								<div class="form-check">
