@@ -1,5 +1,7 @@
 <?php
 
+include("../php/dbconnection.php");
+
 $tipo = mysqli_query($connect, "SELECT * FROM usuarios WHERE email = '$logado'");
 $getTipo = mysqli_fetch_array($tipo);
 
@@ -12,10 +14,10 @@ if ($getTipo['tipo'] == 'motorista') {
 		<div class='collapse navbar-collapse' id='navbarNav'>
 		<ul class='navbar-nav'>
 		<li class='nav-item active'>
-		<a class='nav-link' href='gestaoclientes.php'>Gestão de Clientes</a>
+		<a class='nav-link' href='cadastrovans.php'>Cadastro de Vans</a>
 		</li>
 		<li class='nav-item active'>
-		<a class='nav-link' href='cadastrovans.php'>Cadastro de Vans</a>
+		<a class='nav-link' href='gestaoveiculos.php'>Gestão de Veículos</a>
 		</li>
 		<li class='nav-item active'>
 		<a class='nav-link' href='perfilmotorista.php'>Perfil</a>

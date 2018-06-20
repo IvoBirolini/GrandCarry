@@ -1,5 +1,7 @@
 <?php 
 
+include("../php/dbconnection.php");
+
 $nomeDono = $_POST['nomeDono'];
 $motorista = $_POST['nomeMotorista'];
 $telefone = $_POST['telMotorista'];
@@ -7,7 +9,6 @@ $email = $_POST['emailMotorista'];
 $placa = $_POST['placaVeiculo'];
 $partida = $_POST['bairroPartida'];
 $destino = $_POST['bairroDestino'];
-$connect = mysqli_connect('localhost','admin','0513044','grandcarry');
 $query_select = "SELECT placa FROM veiculos WHERE placa = '$placa'";
 $select = mysqli_query($connect, $query_select);
 $array = mysqli_fetch_array($select);

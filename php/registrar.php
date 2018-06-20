@@ -1,11 +1,12 @@
 <?php 
 
+include("../php/dbconnection.php");
+
 $login = $_POST['registerEmail'];
 $senha = MD5($_POST['registerPassword']);
 $nome = $_POST['registerName'];
 $telefone = $_POST['registerPhone'];
 $tipo = $_POST['registerProfile'];
-$connect = mysqli_connect('localhost','admin','0513044','grandcarry');
 $query_select = "SELECT email FROM usuarios WHERE email = '$login'";
 $select = mysqli_query($connect, $query_select);
 $array = mysqli_fetch_array($select);

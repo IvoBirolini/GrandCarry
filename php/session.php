@@ -1,4 +1,7 @@
 <?php
+
+	include("../php/dbconnection.php");
+
 	session_start();
 	if((!isset ($_SESSION['loginEmail']) == true) and (!isset ($_SESSION['loginPassword']) == true))
 	{
@@ -15,8 +18,8 @@
 
 	if ($username['tipo'] == 'motorista') {
 		$nomeMotorista = $username['nome'];
-		$veiculo = "SELECT * FROM veiculos WHERE nomeDono = '$nomeMotorista'";
+		$veiculo = "SELECT * FROM veiculos WHERE nomeDono = '$nomeMotorista' AND placa IS NOT NULL";
 		$verificaVeiculo = mysqli_query($connect,$veiculo);
-		$qntVeiculo = mysqli_num_rows($verificaVeiculo);
+		$qntVeiculo = mysqli_num_rows($verificaVeiculo)-1;
 	}
 ?>

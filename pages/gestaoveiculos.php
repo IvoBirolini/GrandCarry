@@ -19,51 +19,18 @@
 </head>
 <body>
 	<?php
-		include("../php/navbar.php")
+	include("../php/navbar.php")
 	?>
 	<div class="container-fluid">
 		<legend><center><h2><b>Cadastro de Van</b></h2></center></legend><br>
 		<div class="col-lg-12">
-			<div class="col-lg-10">
-				<form class="form-horizontal center" method="POST" action="../php/cadastrarVeiculo.php">
-					<div class="form-group col-4">
-						<label for="nomeDono">Dono do Veículo</label>
-						<input type="text" class="form-control" id="nomeDono" name="nomeDono" value="<?php echo"$username[nome]"?>" readonly>
-					</div>
-					<div class="form-group col-4">
-						<label for="nomeMotorista">Motorista</label>
-						<input type="text" class="form-control" id="nomeMotorista" name="nomeMotorista" placeholder="Nome do Motorista do Veículo">
-					</div>
-					<div class="form-group col-4">
-						<label for="telMotorista">Telefone</label>
-						<input type="text" class="form-control" id="telMotorista" name="telMotorista" placeholder="Telefone do Motorista do Veículo">
-					</div>
-					<div class="form-group col-4">
-						<label for="staticEmail">Email</label>
-						<input type="email" class="form-control" id="emailMotorista" name="emailMotorista" placeholder="ex: joao.paulo@gmail.com">
-					</div>
-					<div class="form-group col-4">
-						<label for="placaModelo">Placa do Veículo</label>
-						<input type="text" class="form-control" id="placaVeiculo" name="placaVeiculo" placeholder="ex: HAL-9000">
-					</div>
-					<hr>
-					<div class="form-group col-4">
-						<h5>Rota</h5>
-						<label for="bairroSaida">Partida</label>
-						<input type="text" class="form-control" id="bairroPartida" name="bairroPartida" placeholder="Digite o nome do bairro de partida">
-					</div>
-					<div class="form-group col-4">
-						<label for="bairroSaida">Destino</label>
-						<input type="text" class="form-control" id="bairroDestino" name="bairroDestino" placeholder="Digite o nome do bairro de destino">
-					</div>
-					<hr>
-					<div class="col-2">
-						<button type="submit" value="submit" id="submit" name="submit" class="btn btn-success">Cadastrar Van</button>
-					</div>
-				</form>
+			<div class="row">
+				<?php
+				include("../php/gerenciarVeiculos.php");
+				?>
 			</div>
 		</div>
-		<footer class="text-center">
+		<footer class="text-center fixed-bottom">
 			<div class="footer-above">
 				<div class="container">
 					<div class="row">
@@ -96,6 +63,9 @@
 			</div>
 		</footer>
 	</div>
+
+	<!-- Modal -->
+
 	<!-- JavaScript (Opcional) -->
 	<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

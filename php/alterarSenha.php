@@ -1,6 +1,7 @@
 <?php
 
 include("../php/session.php");
+include("../php/dbconnection.php");
 
 $list = "SELECT * FROM usuarios WHERE email = '$logado'";
 $atual = mysqli_query($connect,"SELECT * FROM usuarios WHERE email = '$logado'");

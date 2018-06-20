@@ -1,10 +1,11 @@
 <?php
 
+include("../php/dbconnection.php");
+
 session_start();
 $login = $_POST['loginEmail'];
 $entrar = $_POST['entrar'];
 $senha = md5($_POST['loginPassword']);
-$connect = mysqli_connect('localhost','admin','0513044','grandcarry');
 $list = "SELECT * FROM usuarios WHERE email = '$login' AND senha = '$senha'";
 
 if (isset($entrar)) {
