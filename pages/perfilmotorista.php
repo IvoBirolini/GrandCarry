@@ -60,7 +60,7 @@
 		</div>
 	</div>
 </div>
-<footer class="text-center fixed-bottom">
+<footer class="text-center">
 	<div class="footer-above">
 		<div class="container">
 			<div class="row">

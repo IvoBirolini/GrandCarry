@@ -20,6 +20,6 @@
 		$nomeMotorista = $username['nome'];
 		$veiculo = "SELECT * FROM veiculos WHERE nomeDono = '$nomeMotorista' AND placa IS NOT NULL";
 		$verificaVeiculo = mysqli_query($connect,$veiculo);
-		$qntVeiculo = mysqli_num_rows($verificaVeiculo)-1;
+		$qntVeiculo = mysqli_num_rows($verificaVeiculo);
 	}
 ?>

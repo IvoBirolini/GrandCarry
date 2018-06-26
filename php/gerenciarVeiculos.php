@@ -2,8 +2,11 @@
 
 include("../php/dbconnection.php");
 
-$veiculos = mysqli_query($connect, "SELECT * FROM veiculos WHERE placa IS NOT NULL");
-$fill = mysqli_fetch_array($veiculos);
+$dono = mysqli_query($connect, "SELECT * FROM usuarios WHERE email = '$logado'");
+$donodavan = mysqli_fetch_array($dono);
+$nomedele = $donodavan['nome'];
+
+$veiculos = mysqli_query($connect, "SELECT * FROM veiculos WHERE placa IS NOT NULL AND nomeDono = '$nomedele'");
 
 while ($row = mysqli_fetch_array($veiculos)){
 echo("

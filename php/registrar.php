@@ -18,7 +18,7 @@ if($login == "" || $login == null){
 }else{
   if($logarray == $login){
    
-    echo"<script language='javascript' type='text/javascript'>alert('Esse login já existe');</script>";
+    echo"<script language='javascript' type='text/javascript'>alert('Esse login já existe');window.location.href='../pages/landing.php';</script>";
     die();
     
   }else{
@@ -26,9 +26,9 @@ if($login == "" || $login == null){
     $insert = mysqli_query($connect, $query);
     
     if($insert){
-      echo"<script language='javascript' type='text/javascript'>alert('Usuário cadastrado com sucesso!');window.location.href='../pages/landing.html';</script>";
+      echo"<script language='javascript' type='text/javascript'>alert('Usuário cadastrado com sucesso!');window.location.href='../pages/landing.php';</script>";
     }else{
-      echo"<script language='javascript' type='text/javascript'>alert('Não foi possível cadastrar esse usuário');</script>";
+      echo"<script language='javascript' type='text/javascript'>alert('Não foi possível cadastrar esse usuário');window.location.href='../pages/landing.php';</script>";
     }
   }
 }

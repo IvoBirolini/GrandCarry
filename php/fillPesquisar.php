@@ -27,7 +27,7 @@ echo("
 					<input type='text' class='form-control' name='placa' id='placa' value='$row[placa]' readonly>
 				</div>
 				<hr>
-				<button type='submit' value='submit' id='submit' name='submit' class='btn btn-info'><a data-toggle='modal' data-target='#$row[ID]'>Ver Veículo</a></button>
+				<button type='button' class='btn btn-info'><a data-toggle='modal' data-target='#$row[ID]'>Ver Veículo</a></button>
 			</form>
 		</div>
 	</div>
